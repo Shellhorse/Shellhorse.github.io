@@ -27,7 +27,7 @@
 					<a href="#projects" class="navbar__links" id="projects-page">Projects</a>
 				</li>
 				<li class="navbar__btn">
-					<a href="#contact" class="button" id="Contact">Contact</a>
+					<a href="#contact" class="button" id="Contact" onclick="openForm()">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -64,7 +64,7 @@
 
 				<p>Continued to hone my skills in languages I have learned while learning new languages like <span>JavaScript</span>, <span>HTML</span>, and <span>CSS</span></p>
 		
-				<button class="main__btn"><a href="#">Contact</a></button>
+				<button class="main__btn" onclick="openForm()"><a href="#">Contact</a></button>
 			</div>
 		</div>
 	</div>
@@ -73,27 +73,50 @@
 	<div class="projects" id="projects">
 		<h1>My Projects</h1>
 		<div class="projects__wrapper">
-			<div class="projects__card">
+			<div class="projects__card" style="background-image: url('./assets/Dnd.jpg');">
 				<h2>DnD Character Manager</h2>
 				<p>A Dnd Character Manager created using Java and an Agile working environment</p>
-				<div class="projects__btn"><button><a href="https://github.com/Shellhorse/Shellhorse.github.io">GitHub</a></button></div>
+				<div class="projects__btn"><a href="https://github.com/Shellhorse/Shellhorse.github.io"><button>GitHub</button></a></div>
 			</div>
-			<div class="projects__card">
+			<div class="projects__card" style="background-image: url('./assets/pathfinding.png');">
 				<h2>A* Pathfinding Visualizer</h2>
 				<p>A pathfinding visualizer created using Python</p>
-				<div class="projects__btn"><button><a href="https://github.com/Shellhorse/Shellhorse.github.io">GitHub</a></button></div>
+				<div class="projects__btn"><a href="https://github.com/Shellhorse/Shellhorse.github.io"><button>GitHub</button></a></div>
 			</div>
-			<div class="projects__card">
-				<h2>Coding Projects</h2>
-				<p>Projects in Java and Pyhton</p>
+			<div class="projects__card" style="background-image: url('./assets/work-in-progress.png');">
+				<h2>Current Project</h2>
+				<p>Chess Game Using React and node.js</p>
 				<div class="projects__btn"><button>GitHub</button></div>
 			</div>
-			<div class="projects__card">
+			<div class="projects__card" style="background-image: url('./assets/website.png');">
 				<h2>This Website</h2>
 				<p>Website created using Html, CSS, and JavaScript</p>
-				<div class="projects__btn"><button><a href="https://github.com/Shellhorse/Shellhorse.github.io">GitHub</a></button></div>
+				<div class="projects__btn"><a href="https://github.com/Shellhorse/Shellhorse.github.io"><button>GitHub</button></a></div>
 			</div>
 		</div>
+	</div>
+
+	<div class="contact__form" id="myForm">
+		<form class="contact__form__container" method="POST" actions="contact-form-handler.php">
+			<ul class="top">
+				<li>
+					<h1>Contact Me</h1>
+				</li>
+				<li>
+					<button class="close__contact" onclick="closeForm()">X</button>
+				</li>
+			</ul>
+			
+			<input name="name" type="text" class="form__control" placeholder="Your Name" required>
+			<br>
+			<input name="email" type="email" class="form__control" placeholder="Your Email" required>
+			<br>
+			<textarea name="messsage" class="form__control" placeholder="Message" rows="4" required></textarea>
+			<br>
+			<input type="submit" class="form__control__submit" value="SEND MESSAGE">
+		</form>
+	</div>
+
 	</div>
 
 	<script src = "app.js"></script>
