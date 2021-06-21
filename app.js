@@ -1,67 +1,64 @@
-const menu = document.querySelector('#mobile-menu')
-const menuLinks = document.querySelector('.navbar__menu')
-const navLogo = document.querySelector('#navbar__logo')
+if(document.readyState == 'loading') {
+    document.addEventListener('DOMContentLoaded', ready);
+} else {
+    ready();
+}
 
-// Display Mobile Menu
-const mobileMenu = () => {
-    menu.classList.toggle('is-active');
-    menuLinks.classList.toggle('active');
-};
+function ready() {
+    changeView();
+}
 
-menu.addEventListener('click', mobileMenu);
+async function changeView() {
+    content = document.getElementsByClassName('content');
+    bullet = document.getElementsByClassName('bullet');
+    for(var i = 0; i < content.length; i++) {
+        if(i == 0) {
+            changeHeader();
+        }
 
-// Show active menu when scrolling
-const highlightMenu = () => {
-    const elem = document.querySelector('.highlight')
-    const homeMenu = document.querySelector('#home-page')
-    const aboutMenu = document.querySelector('#about-page')
-    const projectsMenu = document.querySelector('#projects-page')
-    const visualizersMenu = document.querySelector('#visualizers-page')
+        content[i].style.display = 'flex';
+        bullet[i].classList.add('active');
 
-    let scrollPos = window.scrollY
+        await sleep(15000);
 
-    // adds 'highlights' class to menu items
-    if(window.innerWidth > 960 && scrollPos < 600) {
-        homeMenu.classList.add('highlight')
-        aboutMenu.classList.remove('highlight')
-        return
-    } 
-    else if(window.innerWidth > 960 && scrollPos < 1400) {
-        aboutMenu.classList.add('highlight')
-        homeMenu.classList.remove('highlight')
-        projectsMenu.classList.remove('highlight')
-        return
-    }
-    else if(window.innerWidth > 960 && scrollPos < 2345) {
-        projectsMenu.classList.add('highlight')
-        aboutMenu.classList.remove('highlight')
-        return
-    }
+        content[i].classList.add('switch');
 
-    if((elem && window.innerWidth < 960 && scrollPos < 600) || elem) {
-        elem.classList.remove('highlight')
-    }
-};
+        await sleep(1000);
 
-window.addEventListener('scroll', highlightMenu);
-window.addEventListener('click', highlightMenu);
-
-//Close mobile menu
-const hideMobileMenu = () => {
-    const menuBars = document.querySelector('.is-active')
-    if(window.innerWidth <= 960 && menuBars) {
-        menu.classList.toggle('is-active')
-        menuLinks.classList.remove('active')
+        content[i].style.display = 'none';
+        bullet[i].classList.remove('active');
+        content[i].classList.remove('switch');
+        
+        if(i == (content.length - 1)) {
+            i = -1;
+        }
     }
 }
 
-menuLinks.addEventListener('click', hideMobileMenu);
-navLogo.addEventListener('click', hideMobileMenu);
+async function changeHeader() {
+    header = document.getElementsByClassName('description')[0];
+    wordBank = ['[Passionate]', '[Productive]', '[Fast-Learning]', '[Committed]', '[Innovative]', '[Team-minded]', '[Thorough]', '[Detailed]'];
 
-function openForm() {
-    document.getElementById("myForm").style.display = "block";
+    var x = 1;
+    await sleep(2000);
+    while(isVisible('content')) {
+        await sleep(1500);
+        header.innerText = wordBank[randomNumber(8)];
+    }
 }
-  
-function closeForm() {
-    document.getElementById("myForm").style.display = "none";
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+function randomNumber(max) {
+    return Math.floor(Math.random() * max)
+}
+
+function isVisible(string){
+    visible = document.getElementsByClassName(string)[0];
+    if(getComputedStyle(visible).display == 'none') {
+        return false;
+    }
+    return true;
 }

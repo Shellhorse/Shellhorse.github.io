@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ns1="http://sozi.baierouge.fr" xmlns:cc="http://creativecommons.org/ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" id="svg2" xml:space="preserve" viewBox="0 0 595.65 252.65" version="1.1" inkscape:version="0.91 r13725">
+  <defs id="defs6">
+    <clipPath id="clipPath18">
+      <path id="path20" d="m457.8 61.722c-12.05-12.11-29.08-22.817-51.08-32.122-21.97-9.332-47.21-16.546-75.72-21.64-29.52-5.305-60.44-7.961-92.76-7.961s-63.23 2.656-92.72 7.961c-28.51 5.094-53.747 12.308-75.719 21.64-22 9.309-39.028 20.012-51.082 32.122-12.481 12.503-18.719 25.613-18.719 39.318 0 13.703 6.238 26.824 18.719 39.359 12.054 12.078 29.082 22.785 51.082 32.117 21.972 9.336 47.211 16.547 75.719 21.641 29.492 5.309 60.402 7.961 92.718 7.961 32.321 0 63.242-2.652 92.762-7.961 28.508-5.094 53.746-12.305 75.719-21.641 22-9.332 39.027-20.039 51.082-32.117 12.48-12.535 18.719-25.656 18.719-39.359 0-13.707-6.239-26.817-18.719-39.32z" inkscape:connector-curvature="0"/>
+    </clipPath>
+    <clipPath id="clipPath26">
+      <path id="path28" d="m5.1769e-7 -174.05h596.25v598.18h-596.25v-598.18z" inkscape:connector-curvature="0"/>
+    </clipPath>
+    <radialGradient id="radialGradient30" gradientUnits="userSpaceOnUse" cy="126.33" cx="297.83" r="297.79">
+      <stop id="stop32" style="stop-color:#ffffff;stop-opacity:.29799" offset="0"/>
+      <stop id="stop34" style="stop-color:#ffffff;stop-opacity:.27060" offset=".64310"/>
+      <stop id="stop38" style="stop-color:#ffffff;stop-opacity:.18430" offset=".78820"/>
+      <stop id="stop40" style="stop-color:#ffffff;stop-opacity:.050996" offset=".949"/>
+      <stop id="stop42" style="stop-color:#ffffff;stop-opacity:0" offset="1"/>
+    </radialGradient>
+    <mask id="mask44">
+      <g id="g46">
+        <g id="g48" clip-path="url(#clipPath26)">
+          <path id="path50" style="fill:url(#radialGradient30)" d="m5.1769e-7 -174.05h596.25v598.18h-596.25v-598.18z" inkscape:connector-curvature="0"/>
+        </g>
+      </g>
+    </mask>
+    <radialGradient id="radialGradient54" gradientUnits="userSpaceOnUse" cy="126.33" cx="297.83" r="297.79">
+      <stop id="stop56" style="stop-color:#483b2d" offset="0"/>
+      <stop id="stop58" style="stop-color:#4d4030" offset=".64310"/>
+      <stop id="stop62" style="stop-color:#5b503b" offset=".78820"/>
+      <stop id="stop64" style="stop-color:#73694c" offset=".949"/>
+      <stop id="stop66" style="stop-color:#7c7352" offset="1"/>
+    </radialGradient>
+  </defs>
+  <g id="g10" transform="matrix(1.25 0 0 -1.25 0 252.65)">
+    <g id="g12">
+      <g id="g14">
+        <g id="g16" clip-path="url(#clipPath18)">
+          <g id="g22" transform="matrix(.8 0 0 .33936 -4.1416e-7 58.184)">
+            <g id="g52" mask="url(#mask44)">
+              <path id="path68" style="fill-rule:evenodd;fill:url(#radialGradient54)" d="m457.8 61.722c-12.05-12.11-29.08-22.817-51.08-32.122-21.97-9.332-47.21-16.546-75.72-21.64-29.52-5.305-60.44-7.961-92.76-7.961s-63.23 2.656-92.72 7.961c-28.51 5.094-53.747 12.308-75.719 21.64-22 9.309-39.028 20.012-51.082 32.122-12.481 12.503-18.719 25.613-18.719 39.318 0 13.703 6.238 26.824 18.719 39.359 12.054 12.078 29.082 22.785 51.082 32.117 21.972 9.336 47.211 16.547 75.719 21.641 29.492 5.309 60.402 7.961 92.718 7.961 32.321 0 63.242-2.652 92.762-7.961 28.508-5.094 53.746-12.305 75.719-21.641 22-9.332 39.027-20.039 51.082-32.117 12.48-12.535 18.719-25.656 18.719-39.359 0-13.707-6.239-26.817-18.719-39.32z" inkscape:connector-curvature="0"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+<metadata><rdf:RDF><cc:Work><dc:format>image/svg+xml</dc:format><dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/><cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/><dc:publisher><cc:Agent rdf:about="http://openclipart.org/"><dc:title>Openclipart</dc:title></cc:Agent></dc:publisher></cc:Work><cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/"><cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/><cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/><cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/></cc:License></rdf:RDF></metadata></svg>
