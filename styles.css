@@ -270,6 +270,12 @@ h1 {
     border-radius: 0.5em;
 }
 
+h3 i {
+    margin-top: 0.5em;
+    float: left;
+    font-size: clamp(0.75rem, 5vw, 1.5rem);
+}
+
 .project h3:hover {
     cursor: pointer;
 }
@@ -394,19 +400,20 @@ h1 {
 
 .chessboard {
     display: grid;
+    font-size: clamp(.25rem, 1.65vw, 1rem);
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     border: 2px solid var(--clr-black-800);
     border-radius: 0.25em;
-    height: 800px;
-    width: 800px;
+    height: 50em;
+    width: 50em;
     overflow: hidden;
 }
 
 .tile{
     display: grid;
     place-content: center;
-    height: 100px;
-    width: 100px;
+    height: 6.25em;
+    width: 6.25em;
 }
 
 .white {
