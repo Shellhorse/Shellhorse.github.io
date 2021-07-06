@@ -1,124 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Website</title>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-	<!--Navbar Section-->
-	<nav class="navbar">
-		<div class="navbar__container">
-			<a href="#home" id="navbar__logo">JS</a>
-			<div class="navbar__toggle" id="mobile-menu">
-				<span class="bar"></span>
-				<span class="bar"></span>
-				<span class="bar"></span>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Jordan Shellhorse // Frontend Developer Personal Website">
+		<link rel="stylesheet" href="styles.css">
+		<title>Jordan Shellhorse</title>
+	</head>
+	<body class="loading">
+
+		<header>
+			<nav class="navigation">
+				<a href="index.html">HOME</a>
+				<a href="about.html">ABOUT</a>
+				<a href="skills.html">SKILLS</a>
+			</nav>
+		</header>
+
+		<section class = 'hero'>
+			<img  class ='branch_one' src ="assets/branch_1.svg" alt ="Branch">
+			<img  class ='branch_two' src ="assets/branch_2.svg" alt ="Branch">
+			<div class="type">
+				<h1>Hi I am Jordan.</h1>
 			</div>
-			<ul class="navbar__menu">
-				<li class="navbar__item">
-					<a href="#home" class="navbar__links" id="home-page">Home</a>
-				</li>
-				<li class="navbar__item">
-					<a href="#about" class="navbar__links" id="about-page">About</a>
-				</li>
-				<li class="navbar__item">
-					<a href="#projects" class="navbar__links" id="projects-page">Projects</a>
-				</li>
-				<li class="navbar__btn">
-					<a href="#contact" class="button" id="Contact" onclick="openForm()">Contact</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
+			<h2 class="intro">Software Developer</h2>
+			<img class = 'shadow' src="assets/shadow.svg" alt="shadow">
+		</section>
 
-	<!-- Hero Section -->
-	<div class="hero" id="home">
-		<div class="hero__container">
-			<h1 class="hero__heading">HELLO WORLD,</h1>
-			<h2 class="hero__heading">I'm <span>J</span>ordan <span>S</span>hellhorse</h2>
-			<p class="hero__description">This is my website </p>
-		</div>
-	</div>
-
-	<!-- About Section -->
-	<div class="main" id="about">
-		<div class="main__container">
-			<div class="main__img--container">
-				<div class="main__img--card">
-					<img src="https://i.pinimg.com/originals/3a/46/cd/3a46cd297189fe90c388116aa9e7ba04.jpg" alt=""></div>
-				</div>
-			<div class="main__content">
-				<h1>About Me</h1>
-				<p>
-					Computer Science Graduate with a minor in mathematics, graduated from <a href="https://www.valdosta.edu/" class="url">Valdosta State Univeristy</a> in December of 2020.
-					Learned a variety of different programming languages while in school:
-				</p> 
-				
-				<ul> 
-					<li>Java</li> 
-					<li>Python</li> 
-					<li>C</li>
-				</ul>
-
-				<p>Continued to hone my skills in languages I have learned while learning new languages like <span>JavaScript</span>, <span>HTML</span>, and <span>CSS</span></p>
-		
-				<button class="main__btn" onclick="openForm()"><a href="#">Contact</a></button>
-			</div>
-		</div>
-	</div>
-
-	<!-- Projects Section -->
-	<div class="projects" id="projects">
-		<h1>My Projects</h1>
-		<div class="projects__wrapper">
-			<div class="projects__card" style="background-image: url('./assets/Dnd.jpg');">
-				<h2>DnD Character Manager</h2>
-				<p>A Dnd Character Manager created using Java and an Agile working environment</p>
-				<div class="projects__btn"><a href="https://github.com/Shellhorse/Dungeons-And-Dragons-Character-Manager"><button>GitHub</button></a></div>
-			</div>
-			<div class="projects__card" style="background-image: url('./assets/pathfinding.png');">
-				<h2>A* Pathfinding Visualizer</h2>
-				<p>A pathfinding visualizer created using Python</p>
-				<div class="projects__btn"><a href="https://github.com/Shellhorse/A-Pathfinding"><button>GitHub</button></a></div>
-			</div>
-			<div class="projects__card" style="background-image: url('./assets/work-in-progress.png');">
-				<h2>Current Project</h2>
-				<p>Chess Game Using React and node.js</p>
-				<div class="projects__btn"><button>GitHub</button></div>
-			</div>
-			<div class="projects__card" style="background-image: url('./assets/website.png');">
-				<h2>This Website</h2>
-				<p>Website created using Html, CSS, and JavaScript</p>
-				<div class="projects__btn"><a href="https://github.com/Shellhorse/Shellhorse.github.io"><button>GitHub</button></a></div>
-			</div>
-		</div>
-	</div>
-
-	<div class="contact__form" id="myForm">
-		<form class="contact__form__container" method="POST" actions="">
-			<ul class="top">
-				<li>
-					<h1>Does not work on GitHub</h1>
-				</li>
-				<li>
-					<button class="close__contact" onclick="closeForm()">X</button>
-				</li>
-			</ul>
-			
-			<input name="name" type="text" class="form__control" placeholder="Your Name" required>
-			<br>
-			<input name="email" type="email" class="form__control" placeholder="Your Email" required>
-			<br>
-			<textarea name="messsage" class="form__control" placeholder="Message" rows="4" required></textarea>
-			<br>
-			<input type="submit" class="form__control__submit" value="SEND MESSAGE">
-		</form>
-	</div>
-
-	</div>
-
-	<script src = "app.js"></script>
-</body>
+		<footer class = "footer">
+			<a href="https://github.com" target="_blank" rel="noopener" rel='noreferrer'>
+				<img src="assets/Github_logo.png" alt="Github Logo">
+			</a>
+			<a class = 'resume' href="https://drive.google.com/file/d/1YfhwzSu3q1OQAiBtbGbaa3-r9IaTcdbI/preview" target="_blank" rel="noopener" rel='noreferrer'>
+                <p>RESUME</p>
+			</a>
+		</footer>
+	</body>
 </html>
